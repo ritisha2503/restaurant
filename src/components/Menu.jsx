@@ -205,7 +205,7 @@ function Menu() {
         {name: "Dessert", content: dessert}
     ]
     return (
-        <div className="bg-[#0B0A0E] text-gray-200 min-h-screen px-6 md:px-16 py-12">
+        <div className="pt-20 bg-[#0B0A0E] text-gray-200 min-h-screen px-6 md:px-16 py-12">
             
             <h1 className="text-4xl md:text-5xl font-serif text-white mb-12 text-center">
             Our Menu

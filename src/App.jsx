@@ -5,18 +5,22 @@ import Home from './components/Home.jsx'
 import About from './components/About.jsx'
 import Menu from './components/Menu.jsx'
 import Reservations from './components/Reservations.jsx'
+import ScrollToTop from './components/ScrollToTop.jsx'
 
 function App() {
   return (
-    <div>
+    <>
       <Navbar />
-      <Routes>
-        <Route path='/' element={<Home />}/>
-        <Route path='/menu' element={<Menu />}/>
-        <Route path='/about' element={<About />}/>
-        <Route path='/reservations' element={<Reservations />}/>
-      </Routes>
-    </div>
+      <ScrollToTop />
+      <main className="bg-[#0B0A0E] min-h-screen">
+        <Routes>
+          <Route path='/' element={<Home />}/>
+          <Route path='/menu' element={<Menu />}/>
+          <Route path='/about' element={<About />}/>
+          <Route path='/reservations' element={<Reservations />}/>
+        </Routes>
+      </main>
+    </>
   )
 }
 

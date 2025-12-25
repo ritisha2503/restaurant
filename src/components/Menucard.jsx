@@ -1,7 +1,7 @@
 function MenuCard({ item }) {
     return (
         <div
-        className={`bg-[#1A1729] rounded-xl p-5 transition-all duration-300
+        className={`bg-[#1A1729] rounded-xl p-5 overflow-hidden transition-all duration-300
                     hover:scale-[1.02] hover:shadow-lg hover:shadow-black/40
                     ${item.special ? "border border-accent/60" : "border border-white/5"}`}
         >
