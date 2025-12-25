@@ -89,7 +89,7 @@ function Reservations() {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                placeholder="Your full name"
+                placeholder="Number of people"
                 className="w-full bg-transparent border border-white/20
                             px-4 py-3 text-white
                             focus:outline-none focus:border-accent
