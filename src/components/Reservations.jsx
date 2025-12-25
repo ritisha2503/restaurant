@@ -4,7 +4,8 @@ function Reservations() {
     const [formData, setFormData] = useState({
         name: "",
         date: "",
-        time: ""
+        time: "",
+        num: ""
     })
 
     function handleChange(e) {
@@ -13,7 +14,6 @@ function Reservations() {
 
     function handleSubmit(e) {
         e.preventDefault()
-        // no backend — intentional
     }
 
     return (
