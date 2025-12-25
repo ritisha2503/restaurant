@@ -19,12 +19,10 @@ function Reservations() {
     return (
         <div className="pt-20 bg-[#0B0A0E] min-h-screen px-6 md:px-16 py-20 text-gray-300">
 
-        {/* Page Title */}
         <h1 className="text-4xl md:text-5xl font-serif text-white mb-12 text-center">
             Reservations
         </h1>
 
-        {/* Form Card */}
         <div className="max-w-xl mx-auto bg-[#1A1729] p-8 md:p-10 rounded-xl border border-white/10">
             
             <p className="text-gray-400 mb-8 text-center">
@@ -33,7 +31,6 @@ function Reservations() {
 
             <form onSubmit={handleSubmit} className="space-y-6">
 
-            {/* Name */}
             <div>
                 <label className="block text-sm uppercase tracking-wider mb-2 text-gray-400">
                 Name
@@ -51,7 +48,6 @@ function Reservations() {
                 />
             </div>
 
-            {/* Date */}
             <div>
                 <label className="block text-sm uppercase tracking-wider mb-2 text-gray-400">
                 Date
@@ -68,7 +64,6 @@ function Reservations() {
                 />
             </div>
 
-            {/* Time */}
             <div>
                 <label className="block text-sm uppercase tracking-wider mb-2 text-gray-400">
                 Time
@@ -85,7 +80,23 @@ function Reservations() {
                 />
             </div>
 
-            {/* Submit */}
+            <div>
+                <label className="block text-sm uppercase tracking-wider mb-2 text-gray-400">
+                Number of people
+                </label>
+                <input
+                type="number"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                placeholder="Your full name"
+                className="w-full bg-transparent border border-white/20
+                            px-4 py-3 text-white
+                            focus:outline-none focus:border-accent
+                            transition-colors"
+                />
+            </div>
+
             <button
                 type="submit"
                 className="w-full mt-4 py-3 border border-accent text-accent
