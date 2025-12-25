@@ -86,8 +86,8 @@ function Reservations() {
                 </label>
                 <input
                 type="number"
-                name="name"
-                value={formData.name}
+                name="number"
+                value={formData.num}
                 onChange={handleChange}
                 placeholder="Number of people"
                 className="w-full bg-transparent border border-white/20
